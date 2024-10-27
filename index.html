@@ -19,14 +19,17 @@
                 <li> <a href="#services">Services </a></li>
                 <li> <a href="#portfolio">portfolio </a></li>
                 <li> <a href="#contact">Contact </a></li>
-                <i class="fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                
             </ul>
-            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
         </nav>
         <div class="header-text">
             <p><span style="font-family: 'Courier New', Courier, monospace; font-size: 50px;">F</span>ront-End Developer</p>
             <h1>Hi,I'm <span>Yugeshwar</span> <br> from Suryapet</h1>
-            <a href="images/resume.pdf" download class="btn btn2" style="font-size: 20px; border-radius: 40px;">Download CV</a>
+            <!--<a href="images/resume.pdf" download class="btn btn2" style="font-size: 20px; border-radius: 40px;">Download CV</a> -->
+            <button class="btn btn2" style="font-size: 20px; border-radius: 40px;" onclick="openresume()">Download CV</button>
         </div>
        
     </div>
@@ -36,7 +39,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/photo1.jpg" width="400" height="500">
+                <img src="images/photo1.jpg" width="300" height="400">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -82,12 +85,12 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <ul class="a">
-                            <li><span style="font-size: 20px;">2021-present</span><span style="margin-left: 40%;font-size: 20px;">(GPA: 9.48)</span><br>B.Tech in Computer Science and Engineering<br>           
+                            <li><span style="font-size: 20px;">2021-present</span><span style="margin-left: 40%;font-size: 20px;">(GPA: 8.34)</span><br>B.Tech in Computer Science and Engineering<br>           
                                 Malla Reddy college of Engineering and Technology 
                                 | Maisammaguda </li>
                                 <li><span style="font-size: 20px;">2019 - 2019</span><span style="margin-left: 42%;font-size: 20px;">(GPA: 9.48)</span><br>Intermediate<br>           
                                     SR Junior College | Boduppal  </li>
-                                <li><span style="font-size: 20px;">2019</span><span style="margin-left: 52%;font-size: 20px;">(GPA: 9.48)</span><br>Secondary School Certificate<br>           
+                                <li><span style="font-size: 20px;">2019</span><span style="margin-left: 52%;font-size: 20px;">(GPA: 9.3)</span><br>Secondary School Certificate<br>           
                                     Dr.Hr High School | Kodada.  </li>
                                  
                                 </ul>
@@ -118,7 +121,7 @@
             </div>
             <div>
                 <i class="fa-brands fa-java"></i>
-                <h2>python developer</h2>
+                <h2>Java Developer</h2>
                 <p style="line-height: 31px;font-size: 15px;">Java is a versatile, object-oriented programming language widely used for building cross-platform applications, from mobile apps to large-scale enterprise systems, due to its portability, robustness, and extensive libraries</p>
                 <a href="#">learn more</a>
             </div>
@@ -210,14 +213,21 @@ function opentab(tabname){
 </script>
 <!-----for open and closing the tab-->
 <script>
-    var sidemenu = document.getElementById("sidemenu");
+    var sidemeu = document.getElementById("sidemenu");
     function openmenu(){
-        sidemenu.style.right = "0";
+        sidemeu.style.right = "0";
     }
-    function openmenu(){
-        sidemenu.style.right = "-200px";
+    function closemenu(){
+        sidemeu.style.right = "-200px";
     }
 
+</script>
+
+
+<script>
+    function openresume() {
+        window.location.href = "images/resume.pdf";
+    }
 </script>
 
     
